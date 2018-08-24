@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+	var anoAtual = parseFloat(prompt("Digite o ano atual. (ex.: 2018"));
+	var x, salarioInicial, salario, aumento;
+	salario = 1000; // salario inicial (em 2005)
+	aumentoInicial = 0.015; // Aumento inicial 2006
+
+	//Controle de loop (colocarei um controle para o loop não ficar muito longo em caso de algum erro de digitação)
+	if(anoAtual <= 2050){
+			
+		document.write("=======================================================<br>");
+		document.write("Salário Inicial: "+salario+"<br>");
+		document.write("Ano: 2005<br>");
+		document.write("=======================================================<br><br><br>");
+
+		for(x=2006;x<=anoAtual;x++){
+			if (x >= 2007){ // Aqui verifica se o ano é >= 2007 (ANO em que o aumento começa a dobrar)
+				aumentoInicial = aumentoInicial * 2;
+			}
+			aumento = salario * aumentoInicial
+			salario = salario + aumento;
+			document.write("=======================================================<br>");
+			document.write("Salário Antigo: "+(salario-aumento).toFixed(2)+"<br>");// toFixed Para arredondar o numero flutuante
+			document.write("Percentual de Aumento: "+(aumentoInicial*100)+"%<br>");
+			document.write("Aumento: "+aumento.toFixed(2)+"<br>");// toFixed Para arredondar o numero flutuante
+			document.write("Salário Novo: "+salario.toFixed(2)+"<br>");// toFixed Para arredondar o numero flutuante
+			document.write("Ano: "+x+"<br>");
+			document.write("=======================================================<br><br><br>");
+		}
+
+
+	}
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

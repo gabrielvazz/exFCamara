@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var tamanho = parseFloat(prompt("Digite o tamanho em metros quadrados.")); 
+	var lataTinta = 54;
+	var qnt = tamanho/lataTinta;
+	var qnt = Math.ceil(qnt) // Arredondando para o numero a cima em caso de numero flutuante
+	var preco = qnt*80;
+	
+	document.write("Tamanho em metros quadrados: "+tamanho+"<br>");
+	document.write("Uma lata faz "+lataTinta+" metros quadrados de pintura"+"<br>");
+	document.write("Quantidade de latas necessarias: "+qnt+"<br>");
+	document.write("Preco de "+qnt+" latas de tinta (R$ 80,00 cada): "+preco+"<br>");
+	
+
+</script>
+
+
+
+
+
+</body>
+</html>

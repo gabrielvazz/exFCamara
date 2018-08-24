@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var numeroInicial = parseFloat(prompt("Digite o valor inicial")); 
+	var numeroFinal = parseFloat(prompt("Digite o valor final"));
+	var primo = true;
+	var x, y, j;
+
+	document.write("Segue abaixo os numeros primos do intervalo entre "+numeroInicial+"-"+numeroFinal+"<br>");
+	for(x=numeroInicial;x<numeroFinal;x++){
+		primo = true;
+		if(x==1){
+			primo = false
+		}
+		if ((x%2 == 0) && (x != 2)) {
+			primo = false
+		}
+
+		if(primo == true){
+			j = x/2;
+			for(y=3;y<=j;y++){
+				if(x%y == 0){
+					primo = false;
+				}
+			}
+		}
+
+		if(primo == true){
+			document.write(x+"<br>");
+		}
+	} 
+
+</script>
+
+
+
+
+
+</body>
+</html>

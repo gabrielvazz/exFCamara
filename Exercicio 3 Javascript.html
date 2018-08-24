@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var hrTrabalhada = parseFloat(prompt("Digite as horas trabalhadas.")); 
+	var salMinimo = parseFloat(prompt("Digite o valor do salario minimo (utilize pontos ao invez de virgula)"));
+	var percentualSal = salMinimo * 0.10;
+	var salBruto = hrTrabalhada * percentualSal;
+	var salFinal = salBruto - (salBruto * 0.3);
+	document.write("Horas Trabalhadas: "+hrTrabalhada+" Horas <br>");
+	document.write("Salario Minimo: R$ "+salMinimo+"<br>");
+	document.write("Valor da Hora: R$ "+percentualSal+"<br>");
+	document.write("Salario Bruto: R$ "+salBruto+"<br>");
+	document.write("Valor Corrigido (Imposto 3%): R$ "+salFinal+"<br>");
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
